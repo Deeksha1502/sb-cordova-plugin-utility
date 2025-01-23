@@ -251,7 +251,7 @@ public class UtilityPlugin extends CordovaPlugin {
         String param = args.getString(1);
         String value;
         try {
-            value = BuildConfigUtil.getBuildConfigValue("org.sunbird.app", param).toString();
+            value = BuildConfigUtil.getBuildConfigValue("org.sunbird", param).toString();
             callbackContext.success(value);
         } catch (Exception e) {
             callbackContext.error(e.getMessage());
